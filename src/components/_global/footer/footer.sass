@@ -1,0 +1,143 @@
+footer
+	margin-left: auto
+	.footer-block
+		position: relative
+		background: #808285
+		.footer-card,.footer-address
+			padding-top: 50px
+			padding-bottom: 50px
+
+			@media screen and ( max-width: 576px)
+				padding-top: 10px
+				padding-left: 0
+			&.pr-40
+				padding-right: 40px
+			.card-title,.card-logo-top,.card-logo-bottom,.card-title-contact
+				padding-bottom: 15px
+				h4
+					font-size: 16px
+					color: #ffffff
+					text-transform: uppercase
+		.footer-address
+			@media screen and ( max-width: 768px)
+				padding-bottom: 0
+		.footer-card
+			padding-left: 30px
+			@media screen and ( max-width: 1023px)
+				padding-left: 0
+			.card-title
+				padding-bottom: 50px
+			.card-address
+				font-size: 14px
+				color: #ffffff
+				padding-top: 10px
+			.card-info-footer
+				ul
+					list-style: none
+					padding: 0
+					li
+						display: flex
+						align-items: center
+						padding-bottom: 15px
+						.text-info
+							font-size: 14px
+							color: #ffffff
+							position: relative
+							width: 18%
+							&::before
+								content: '|'
+								position: absolute
+								top: 0
+								right: 0
+						.hotline,span
+							padding-left: 20px
+							font-size: 16px
+							color: #ffffff
+							font-weight: 800
+						.item-links
+							padding-left: 10px
+							.links
+								span
+									padding-left: 10px
+		.footer-address
+			.footer-vector
+				border: 1px solid #c0c1c2
+				width: 190px
+				height: 90px
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-top: 15px
+			.text-footer
+				font-size: 14px
+				color: #ffffff
+				font-weight: 600
+				padding-top: 5px
+				padding-left: 25px
+				@media screen and ( max-width: 1023px)
+					padding-left: 0
+			.card-logo-bottom
+				padding-top: 40px
+			ul
+				list-style: none
+				padding: 0
+				display: flex
+				@media screen and ( max-width: 1023px)
+					display: block
+				.footer-vector-bottom
+					border: 1px solid #c0c1c2
+					width: 190px
+					height: 90px
+					display: flex
+					justify-content: center
+					align-items: center
+					margin-top: 15px
+					margin-right: 10px
+				.text-footer
+					font-size: 14px
+					color: #ffffff
+					font-weight: 600
+					text-align: center
+					padding-left: 17px
+					padding-right: 28px
+					@media screen and ( max-width: 1024px)
+						padding-left: 0
+						text-align: left
+
+	.footer-copyright
+		background: #ffffff
+		.copyright-wrapper
+			display: flex
+			justify-content: space-between
+			@media screen and ( max-width: 768px)
+				justify-content: center
+			.right-text
+				height: 60px
+				font-size: 14px
+				color: #0082a1
+				padding-top: 20px
+				@media screen and ( max-width: 768px )
+					text-align: center
+					height: auto
+				span
+					color: #8d9090
+			.right-text-policy
+				padding-top: 20px
+				ul
+					list-style: none
+					padding: 0
+					display: flex
+					li
+						position: relative
+						padding: 0 10px
+						&::before
+							content: '|'
+							top: 0
+							right: 0
+							position: absolute
+						&:last-child
+							&::before
+								display: none
+						a
+							font-size: 14px
+							color: #8d9090

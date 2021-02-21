@@ -1,0 +1,101 @@
+.home_s-6
+	padding: 70px 0
+	.wrap-form
+		.form-group
+			display: block
+			&.radio
+				margin-bottom: 15px
+				display: flex
+			&.checkbox
+				margin-bottom: 15px
+				display: flex
+			.text
+				font-size: 16px
+				color: #ffffff
+				font-weight: 800
+				width: 47%
+			.item-form
+				width: inherit
+				margin-left: 30px
+				list-style: none
+				display: flex
+				flex-wrap: wrap
+				@media screen and ( max-width: 1023px)
+					margin-left: 0
+				.list-radio,.list-checkbox
+					flex: 0 0 50%
+					max-width: 50%
+					padding-bottom: 15px
+					label
+						display: flex
+						font-size: 14px
+						color: #c2c3c8
+				.list-radio
+					&:last-child
+						@media screen and ( max-width: 576px)
+							label
+								&::before
+									width: 24px
+			.list-radio,.list-checkbox
+				input
+					padding: 0
+					height: initial
+					width: initial
+					margin-bottom: 0
+					display: none
+					cursor: pointer
+				label
+					position: relative
+					cursor: pointer
+					&::before
+						content: ''
+						-webkit-appearance: none
+						background-color: transparent
+						border: 2px solid #827d78
+						box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+						display: inline-block
+						position: relative
+						vertical-align: middle
+						cursor: pointer
+						border-radius: 50%
+						height: 13px
+						width: 13px
+						top: 5px
+						margin-right: 5px
+				input
+					&:checked
+						~ label 
+							&:after
+								content: ''
+								display: block
+								position: absolute
+								top: 8px
+								left: 3px
+								width: 7px
+								height: 7px
+								border-radius: 50%
+								border: solid #827d78
+			
+			.list-checkbox
+				label
+					&::before
+						border-radius: unset
+				input
+					&:checked
+						~ label 
+							&:after
+								border-radius: unset
+								content: ''
+								top: 5px
+								left: 6px
+								width: 5px
+								height: 10px
+								border: solid #827d78
+								border-width: 0 2px 2px 0
+								transform: rotate(45deg)
+
+	.text-form-bottom
+		font-size: 14px
+		color: #c2c3c8
+		margin-left: 10px
+		margin-top: 25px

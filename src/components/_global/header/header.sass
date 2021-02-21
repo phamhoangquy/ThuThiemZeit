@@ -1,0 +1,423 @@
+header
+	position: fixed
+	width: 100%
+	visibility: visible
+	opacity: 1
+	transition: all .3s ease-in-out
+	padding-top: 10px
+	z-index: 9999
+	@media screen and ( max-width: 1279px)
+		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+		background-color: rgba(#ffffff,.9)
+	nav
+		position: relative
+		width: 100%
+		min-height: 90px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-bottom: 1px solid #e2e4e9
+		padding-bottom: 20px
+		.header
+			display: flex
+			align-items: center
+			.toggle-menu
+				cursor: pointer
+				position: relative
+				padding: 20px
+				background: #5d6467
+				width: 110px
+				height: 40px
+				display: flex
+				align-items: center
+				@media screen and ( max-width: 1279px)
+					width: 40px
+					.text
+						display: none
+				.hamburger-button
+					position: relative
+					width: 20px
+					transition: .3s all linear
+					margin-right: 13px
+					span
+						position: absolute
+						left: 50%
+						transform: translate(-50%, -50%)
+						width: 20px
+						height: 2px
+						background-color: #fff
+						content: ""
+						transition: .3s all linear
+						&:first-child
+							top: -5px
+						&:last-child
+							top: 5px
+				&.active
+					transition: .3s all linear
+					.hamburger-button
+						span
+							top: 50%
+							left: 50%
+							&:first-child
+								transform: translate(-50%, -50%) rotate(45deg)
+							&:nth-child(2)
+								visibility: hidden
+								opacyti: 0
+								transition: .2s all linear
+							&:last-child
+								transform: translate(-50%, -50%) rotate(-45deg)
+				span.text
+					font-size: 14px
+					font-weight: 700
+					text-align: center
+					color: #ffffff
+			.language
+				background-color: rgb(255, 255, 255)
+				width: 90px
+				height: 40px
+				margin-left: 10px
+				.Module
+					height: 100%
+				ul
+					width: 100%
+					height: 100%
+					list-style: none
+					display: flex
+					align-items: center
+					padding-left: 0
+					justify-content: center
+					li
+						padding: 0 10px
+						position: relative
+						&::before
+							content: '|'
+							position: absolute
+							top: 0
+							left: 0
+						&:first-child
+							padding-left: 0
+							&::before
+								display: none
+						&:last-child
+							padding-right: 0
+						a
+							font-size: 14px
+							color: rgb(153, 153, 153)
+						&.active
+							a
+								color: #a49273
+			.main-menu
+				position: absolute
+				top: 300%
+				background: #929596
+				width: 395px
+				height: auto
+				padding: 40px 55px
+				visibility: hidden
+				opacity: 0
+				transition: all .5s ease-in-out
+				&::before
+					position: absolute
+					content: ''
+					width: 0
+					height: 0
+					top: -10px
+					left: 50px
+					border-left: 10px solid transparent
+					border-right: 10px solid transparent
+					border-bottom: 15px solid #929596
+				&.active
+					visibility: visible
+					opacity: 1
+					top: 85%
+					transition: all .5s ease-in-out
+				.nav-menu
+					list-style: none
+					padding: 0
+					.nav-item
+						color: #ffffff
+						padding-bottom: 15px
+						text-transform: uppercase
+						.nav-link
+							position: relative
+							width: max-content
+							color: rgb(255, 255, 255)
+							font-size: 18px
+							font-weight: 600
+							text-transform: uppercase
+							transition: all .3s ease-in-out
+							&::before
+								position: absolute
+								content: ''
+								width: 20px
+								height: 1px
+								background-color: #ffffff
+								top: 50%
+								left: -30px
+								transform: translateY(-50%)
+								visibility: hidden
+								opacity: 0
+						&:hover
+							padding-left: 30px
+							.nav-link
+								transform: translateX(15px)
+								transition: all .3s ease-in-out
+								color: #ffffff
+								&::before
+									visibility: visible
+									opacity: 1
+				.social
+					.icon
+						list-style: none
+						padding: 0
+						display: flex
+						li
+							width: 35px
+							height: 35px
+							display: flex
+							justify-content: center
+							padding-top: 5px
+							margin-right: 10px
+							border: 1px solid #ffffff
+							a
+								span
+									color: #ffffff
+				.hotline-box
+					background: #0082a1
+					padding: 5px 15px
+					margin-top: 15px
+					width: max-content
+					ul.tel
+						list-style: none
+						padding: 0
+						display: flex
+						li
+							display: flex
+							position: relative
+							&::before
+								content: '|'
+								position: absolute
+								top: 0
+								left: 0
+								color: #91002b
+							&:first-child
+								padding-left: 0
+								&::before
+									display: none
+							.icon-tel
+								span
+									font-size: 18px
+									padding-right: 10px
+									color: #ffffff
+							.text-tel
+								a
+									font-size: 18px
+									font-weight: 700
+									color: #ffffff
+				.language
+					margin-left: 0
+					margin-top: 15px
+			.logo
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				text-align: center
+				transition: all .3s ease-in-out
+		.header-infor
+			display: flex
+			justify-content: flex-end
+			.hotline-box
+				background: #0082a1
+				padding: 5px 15px
+				ul.tel
+					list-style: none
+					padding: 0
+					display: flex
+					li
+						display: flex
+						position: relative
+						&::before
+							content: '|'
+							position: absolute
+							top: 0
+							left: 0
+							color: #91002b
+						&:first-child
+							padding-left: 0
+							&::before
+								display: none
+						.icon-tel
+							span
+								font-size: 18px
+								padding-right: 10px
+								color: #ffffff
+						.text-tel
+							a
+								font-size: 18px
+								font-weight: 700
+								color: #ffffff
+			.search-icon
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				background: #ffffff
+				margin-left: 5px
+				padding: 5px 10px
+				span
+					font-size: 18px
+					color: #0082a1
+	.block_search
+		width: 100%
+		height: 100%
+		background-color: rgba(#0082a1,.5)
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		&.show
+			opacity: 1
+			pointer-events: auto
+			transform: translateX(0)
+		.search-icon
+			position: absolute
+			top: 10px
+			right: 10px
+			cursor: pointer
+			width: 40px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #fff
+			font-size: 20px
+			span
+				color: #026fb6
+				&:hover
+					color: #ee202e
+		.search_box
+			position: relative
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 300px
+			height: 40px
+			position: relative
+			input
+				width: 100%
+				height: 100%
+				border: 0
+				background-color: #ffffff
+				padding-left: 1rem
+				color: #9a9999
+				font-size: 16px
+				&::placeholder
+					color: #000000
+					font-size: 16px
+			button
+				position: absolute
+				top: 0
+				right: 0
+				border: 0
+				width: 40px
+				height: 100%
+				background-color: unset
+				font-size: 20px
+				color: #9a9999
+	.menu_mobile
+		width: 50%
+		height: 100%
+		background-color: #ffffff
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		@media screen and ( max-width: 1280px )
+			width: 50%
+		@media screen and ( max-width: 576px )
+			width: 100%
+		.header_btn
+			position: absolute
+			top: 0
+			right: 0
+			width: 40px
+			height: 40px
+			font-size: 30px
+			cursor: pointer
+			display: flex
+			justify-content: center
+		.mobile-wrapper
+			padding-top: 20px
+			display: flex
+			flex-direction: column
+			width: 100%
+			justify-content: left
+			.nav-menu
+				list-style: none
+				padding: 0
+				&:nth-child(2)
+					li
+						&:last-child
+							border-bottom: 0
+				li
+					border-bottom: 0
+					padding: 15px 0
+					border-bottom: 1px solid #9a9999
+					a
+						color: #231f20
+						font-size: 16px
+						font-weight: 600
+						text-transform: uppercase
+					&:hover
+						a
+							color: #026fb6
+					&.active
+						a
+							color: #026fb6
+				@media screen and ( max-width: 1280px )
+					justify-content: left
+			.hotline
+				display: flex
+				justify-content: flex-start
+				color: #9a9999
+				p
+					font-size: 12px
+					color: #9a9999
+					padding: 0 10px
+					margin-top: 5px
+				a
+					font-size: 16px
+					font-weight: 700
+					color: #ee202e
+	.menu_mobile.show
+		opacity: 1
+		pointer-events: auto
+		transform: translateX(0)
+	.overlay
+		position: fixed
+		display: none
+		width: 100%
+		height: 100%
+		z-index: 9
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.5)
+	.overlay.show
+		@media screen and ( max-width: 1280px )
+			display: block
+
+
+// scroll-header
+.active
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+	background-color: rgba(#ffffff,.7)
