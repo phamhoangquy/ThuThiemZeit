@@ -5,6 +5,7 @@ $(document).ready(function() {
     toggleSearch();
     mappingMenu();
     scrollToDiv();
+    homeS4();
 });
 
 // const InsertBd = () => {
@@ -116,31 +117,14 @@ function swiperInit() {
             clickable: "true"
         }
     });
-    var homeSoftwareSwiper = new Swiper(".home_s-4 .swiper-container", {
-        // Optional parameters
-        speed: 1000,
-        spaceBetween: 10,
-        breakpointsInverse: true,
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-            },
-            400: {
-                slidesPerView: 1,
-            },
-            480: {
-                slidesPerView: 1,
-            },
-            768: {
-                slidesPerView: 2,
-            },
-            1025: {
-                slidesPerView: 3,
-            },
-            1440: {
-                slidesPerView: 3,
-            },
-        },
+}
+
+function homeS4() {
+    var kaSwiper1 = new Swiper('#ka-swiper1', {
+        paginationClickable: true,
+        slidesPerView: 3,
+        spaceBetween: 5,
+        autoHeight: true,
     });
 }
 
