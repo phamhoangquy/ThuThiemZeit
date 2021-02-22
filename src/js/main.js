@@ -6,6 +6,19 @@ $(document).ready(function() {
     mappingMenu();
     scrollToDiv();
     homeS4();
+    scrollMenu();
+    var path = window.location.href;
+    let Ketqua = path.substr(path.indexOf("#") + 1);
+    console.log(Ketqua);
+    if (path.indexOf("#") != -1) {
+        $("html,body").animate({
+                scrollTop: $("#" + Ketqua).offset().top -
+                    $("header").outerHeight() -
+                    47,
+            },
+            800
+        );
+    }
 });
 
 // const InsertBd = () => {
@@ -15,6 +28,23 @@ $(document).ready(function() {
 // const HotLine = () => {
 //     $(".header-infor .hotline_box").appendTo(".appendhotline");
 // };
+
+function scrollMenu() {
+    $(".nav-menu li a").on("click", function(e) {
+        if ("" !== this.hash) {
+            var i = $("header").outerHeight() + 90,
+                t = this.hash;
+            $(this)
+                .parent()
+                .addClass("active")
+                .siblings()
+                .removeClass("active"),
+                $("html, body").animate({ scrollTop: $(t).offset().top - i },
+                    800
+                );
+        }
+    });
+}
 
 const scrollToDiv = () => {
     $(".arrow-banner").click(function() {
@@ -29,29 +59,19 @@ const scrollToDiv = () => {
     });
 };
 
-function height(el) {
-    var height = 0;
-    $(el).each(function() {
-        var thisHeight = $(this).height();
-        if (thisHeight > height) {
-            height = thisHeight;
-        }
-        setTimeout(() => {
-            $(el).height(height)
-        }, 100)
-    })
-}
+// function height(el) {
+//     var height = 0;
+//     $(el).each(function() {
+//         var thisHeight = $(this).height();
+//         if (thisHeight > height) {
+//             height = thisHeight;
+//         }
+//         setTimeout(() => {
+//             $(el).height(height)
+//         }, 100)
+//     })
+// }
 
-let header = {
-    scrollActive: function() {
-        let height = $('header').height()
-        if ($(window).scrollTop() > height) {
-            $('header').addClass('active')
-        } else {
-            $('header').removeClass('active')
-        }
-    },
-}
 
 function setBackgroundElement() {
     $('[setBackground]').each(function() {
@@ -128,6 +148,13 @@ function homeS4() {
     });
 }
 
+
+let header = {
+    headerScroll: () => {
+        let heightHeader = $('header').height();
+        $(window).scrollTop() > heightHeader ? $('header').addClass('header-scroll') : $('header').removeClass('header-scroll');
+    }
+}
 $(document).on('scroll', function() {
-    header.scrollActive()
+    header.headerScroll()
 });
