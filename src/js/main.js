@@ -149,6 +149,10 @@ function homeS4() {
 		spaceBetween: 5,
 		loop: true,
 		autoHeight: true,
+		navigation: {
+			nextEl: ".button-next",
+			prevEl: ".swiper-button-prev",
+		},
 	});
 }
 
