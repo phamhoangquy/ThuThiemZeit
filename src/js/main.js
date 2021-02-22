@@ -28,6 +28,12 @@ $(document).ready(function() {
 // const HotLine = () => {
 //     $(".header-infor .hotline_box").appendTo(".appendhotline");
 // };
+let header = {
+    headerScroll: () => {
+        let heightHeader = $('header').height();
+        $(window).scrollTop() > heightHeader ? $('header').addClass('header-scroll') : $('header').removeClass('header-scroll');
+    }
+}
 
 function scrollMenu() {
     $(".nav-menu li a").on("click", function(e) {
@@ -149,12 +155,7 @@ function homeS4() {
 }
 
 
-let header = {
-    headerScroll: () => {
-        let heightHeader = $('header').height();
-        $(window).scrollTop() > heightHeader ? $('header').addClass('header-scroll') : $('header').removeClass('header-scroll');
-    }
-}
+
 $(document).on('scroll', function() {
     header.headerScroll()
 });
