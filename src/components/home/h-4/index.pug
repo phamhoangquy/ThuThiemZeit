@@ -1,23 +1,20 @@
 section.home_s-4
 	.head-title
 		h2 Thư viện hình ảnh
-	.library-wrap-swiper-wrapper
-		.library-left
-		.library-right
-			.swiper-container
+	.wrap-slide-s4
+		.s4-left
+		.s4-right
+			#ka-swiper1.swiper-container
 				.swiper-wrapper
-					.swiper-slide
-						.wrapper
-							.card-img
-								a(href="#")
-									img(src="./img/2.png", alt="")
-					.swiper-slide
-						.wrapper
-							.card-img
-								a(href="#")
-									img(src="./img/4.2.png", alt="")
-					.swiper-slide
-						.wrapper
-							.card-img
-								a(href="#")
-									img(src="./img/4.3.png", alt="")
+					-for (i=0; i<8; i++)
+						.swiper-slide
+							.wrapper
+								a(data-fancybox='gallery' href="./img/2.png" alt="")
+									img(src="./img/2.png" alt="")
+								.images-add
+									a(data-fancybox='gallery' href="./img/2.png" alt="")
+										span.ri-add-line
+				.wrap-button
+					.button-next
+						img(src="./img/next_arrow.png" alt="")
+

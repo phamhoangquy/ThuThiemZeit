@@ -3,18 +3,22 @@
 	.wrap-form
 		.form-group
 			display: block
+			@media screen and ( max-width: 1023px)
+				padding-right: 15px
+				padding-left: 15px
 			&.radio
 				margin-bottom: 15px
 				display: flex
+
 			&.checkbox
 				margin-bottom: 15px
 				display: flex
-			.text
+			.label,.text
 				font-size: 16px
 				color: #ffffff
 				font-weight: 800
 				width: 47%
-			.item-form
+			.cf,.item-form
 				width: inherit
 				margin-left: 30px
 				list-style: none
@@ -30,72 +34,147 @@
 						display: flex
 						font-size: 14px
 						color: #c2c3c8
+				
 				.list-radio
 					&:last-child
 						@media screen and ( max-width: 576px)
 							label
 								&::before
 									width: 24px
-			.list-radio,.list-checkbox
-				input
-					padding: 0
-					height: initial
-					width: initial
-					margin-bottom: 0
-					display: none
-					cursor: pointer
-				label
-					position: relative
-					cursor: pointer
-					&::before
-						content: ''
-						-webkit-appearance: none
-						background-color: transparent
-						border: 2px solid #827d78
-						box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
-						display: inline-block
-						position: relative
-						vertical-align: middle
+				// li
+				// 	&:last-child
+				// 		@media screen and ( max-width: 576px)
+				// 			label
+				// 				&::before
+				// 					width: 24px
+				li
+					flex: 0 0 50%
+					max-width: 50%
+					padding-bottom: 15px
+					input
+						padding: 0
+						height: initial
+						width: initial
+						margin-bottom: 0
+						display: none
 						cursor: pointer
-						border-radius: 50%
-						height: 13px
-						width: 13px
-						top: 5px
-						margin-right: 5px
-				input
-					&:checked
-						~ label 
-							&:after
-								content: ''
-								display: block
-								position: absolute
-								top: 8px
-								left: 3px
-								width: 7px
-								height: 7px
-								border-radius: 50%
-								border: solid #827d78
+					label
+						display: flex
+						font-size: 14px
+						color: #c2c3c8
+						position: relative
+						cursor: pointer
+						&::before
+							content: ''
+							-webkit-appearance: none
+							background-color: transparent
+							border: 2px solid #827d78
+							box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+							display: inline-block
+							position: relative
+							vertical-align: middle
+							cursor: pointer
+							border-radius: 50%
+							height: 13px
+							width: 13px
+							top: 5px
+							margin-right: 5px
+					input
+						&:checked
+							~ label 
+								&:after
+									content: ''
+									display: block
+									position: absolute
+									top: 8px
+									left: 3px
+									width: 7px
+									height: 7px
+									border-radius: 50%
+									border: solid #827d78
+			// .list-radio,.list-checkbox
+			// 	input
+			// 		padding: 0
+			// 		height: initial
+			// 		width: initial
+			// 		margin-bottom: 0
+			// 		display: none
+			// 		cursor: pointer
+			// 	label
+			// 		position: relative
+			// 		cursor: pointer
+			// 		&::before
+			// 			content: ''
+			// 			-webkit-appearance: none
+			// 			background-color: transparent
+			// 			border: 2px solid #827d78
+			// 			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+			// 			display: inline-block
+			// 			position: relative
+			// 			vertical-align: middle
+			// 			cursor: pointer
+			// 			border-radius: 50%
+			// 			height: 13px
+			// 			width: 13px
+			// 			top: 5px
+			// 			margin-right: 5px
+			// 	input
+			// 		&:checked
+			// 			~ label 
+			// 				&:after
+			// 					content: ''
+			// 					display: block
+			// 					position: absolute
+			// 					top: 8px
+			// 					left: 3px
+			// 					width: 7px
+			// 					height: 7px
+			// 					border-radius: 50%
+			// 					border: solid #827d78
 			
-			.list-checkbox
-				label
-					&::before
-						border-radius: unset
-				input
-					&:checked
-						~ label 
-							&:after
-								border-radius: unset
-								content: ''
-								top: 5px
-								left: 6px
-								width: 5px
-								height: 10px
-								border: solid #827d78
-								border-width: 0 2px 2px 0
-								transform: rotate(45deg)
-
+			// .list-checkbox
+			// 	label
+			// 		&::before
+			// 			border-radius: unset
+			// 	input
+			// 		&:checked
+			// 			~ label 
+			// 				&:after
+			// 					border-radius: unset
+			// 					content: ''
+			// 					top: 5px
+			// 					left: 6px
+			// 					width: 5px
+			// 					height: 10px
+			// 					border: solid #827d78
+			// 					border-width: 0 2px 2px 0
+			// 					transform: rotate(45deg)
+		#ctl00_mainContent_ctl07_ctl23245b3b0d6e496d9ab94db2b9d9e09b_rdo23245b3b0d6e496d9ab94db2b9d9e09b
+			li
+				&:last-child
+					@media screen and ( max-width: 576px)
+						label
+							&::before
+								width: 24px
+		.qcheckboxes
+			.cf
+				li
+					label
+						&::before
+							border-radius: unset
+			#ctl00_mainContent_ctl07_ctl41a70044a128430faa4b76a4ed6811a3_val41a70044a128430faa4b76a4ed6811a3
+				position: absolute
+				bottom: 0
+				right: 9%
+			#ctl00_mainContent_ctl07_ctlcc8d26e39a974ef29994cea7c2b015fe_valcc8d26e39a974ef29994cea7c2b015fe
+				position: absolute
+				bottom: 0
+				right: 9%
 	.text-form-bottom
 		font-size: 14px
 		color: #c2c3c8
 		margin-left: 10px
 		margin-top: 25px
+		margin-left: -15px
+		@media screen and ( max-width: 1023px)
+			margin-left: 0
