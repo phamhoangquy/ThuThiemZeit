@@ -9,45 +9,48 @@
 			<div class="head-title">
 				<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h2>
 			</div>
-			<div class="library-wrap-swiper-wrapper">
-				<div class="library-left"></div>
-				<div class="library-right">
-					<div class="swiper-container">
+			<div class="wrap-slide-s4">
+				<div class="s4-left"></div>
+				<div class="s4-right">
+					<div class="swiper-container" id="ka-swiper1">
 						<div class="swiper-wrapper">
 							<xsl:apply-templates select="NewsImages"></xsl:apply-templates>
 							
+						</div>
+						<div class="wrap-button">
+							<div class="button-next"><img src="/Data/Sites/1/media/next_arrow.png" alt=""/></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-	
 	</xsl:template>
 	<xsl:template match="NewsImages">
 		<div class="swiper-slide">
 			<div class="wrapper">
-				<div class="card-img">
-					<a>
-						<!-- <xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
+				<a data-fancybox="gallery">
+					<xsl:attribute name="href">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<img>
+						<xsl:attribute name="src">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
 						</xsl:attribute>
-						<xsl:attribute name="title">
+						<xsl:attribute name="alt">
 							<xsl:value-of select="Title"></xsl:value-of>
 						</xsl:attribute>
-						<xsl:attribute name="target">
-							<xsl:value-of select="Target"></xsl:value-of>
-						</xsl:attribute> -->
-						<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ImageUrl"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="alt">
-								<xsl:value-of select="Title"></xsl:value-of>
-							</xsl:attribute>
-						</img>
+					</img>
+				</a>
+				<div class="images-add">
+					<a data-fancybox="gallery">
+						<xsl:attribute name="href">
+							<xsl:value-of select="ImageUrl"></xsl:value-of>
+						</xsl:attribute>
+						<span class="ri-add-line"></span>
 					</a>
 				</div>
 			</div>
 		</div>
+			
 	</xsl:template>
 </xsl:stylesheet>
