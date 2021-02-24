@@ -4,7 +4,7 @@ $(document).ready(function() {
     toggleSearch();
     mappingMenu();
     homeS4();
-    linkAbout();
+    linksMenu();
     scrollToDiv();
     setBackgroundElement();
 });
@@ -40,7 +40,7 @@ let search = {
     },
 };
 
-function linkAbout() {
+function linksMenu() {
     $(".nav-menu li a").on("click", function(event) {
         if (this.hash !== "") {
             let offset =
