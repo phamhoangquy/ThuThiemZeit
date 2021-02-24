@@ -9,15 +9,18 @@
 			display: block
 			position: absolute
 			left: 0
-			top: -65px
+			top: -30px
 			width: 100%
 			height: 50%
 			background-image: linear-gradient(180deg,hsla(0,0%,100%,1) 15%,hsla(0,0%,100%,.4) 50%, hsla(0,0%,100%,.15) 85%)
 	.wrapper
-		height: 1080px
+		background-attachment: fixed
+		background-repeat: no-repeat
+		background-size: cover
+		height: 100vh
 		position: relative
-		@media screen and(max-width:1441px)
-			height: auto
+		// @media screen and(max-width:1441px)
+		// 	height: auto
 		@media screen and(max-width:768px)
 			height: auto
 		@media screen and(max-width:576px)
@@ -30,9 +33,9 @@
 				width: 100%
 				height: 100%
 				object-fit: cover
-		@media screen and(max-width:1441px)
-			a
-				height: auto
+		// @media screen and(max-width:1441px)
+		// 	a
+		// 		height: auto
 		@media screen and(max-width:768px)
 			a
 				height: auto
