@@ -92,63 +92,23 @@
 									height: 7px
 									border-radius: 50%
 									border: solid #827d78
-			// .list-radio,.list-checkbox
-			// 	input
-			// 		padding: 0
-			// 		height: initial
-			// 		width: initial
-			// 		margin-bottom: 0
-			// 		display: none
-			// 		cursor: pointer
-			// 	label
-			// 		position: relative
-			// 		cursor: pointer
-			// 		&::before
-			// 			content: ''
-			// 			-webkit-appearance: none
-			// 			background-color: transparent
-			// 			border: 2px solid #827d78
-			// 			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
-			// 			display: inline-block
-			// 			position: relative
-			// 			vertical-align: middle
-			// 			cursor: pointer
-			// 			border-radius: 50%
-			// 			height: 13px
-			// 			width: 13px
-			// 			top: 5px
-			// 			margin-right: 5px
-			// 	input
-			// 		&:checked
-			// 			~ label 
-			// 				&:after
-			// 					content: ''
-			// 					display: block
-			// 					position: absolute
-			// 					top: 8px
-			// 					left: 3px
-			// 					width: 7px
-			// 					height: 7px
-			// 					border-radius: 50%
-			// 					border: solid #827d78
-			
-			// .list-checkbox
-			// 	label
-			// 		&::before
-			// 			border-radius: unset
-			// 	input
-			// 		&:checked
-			// 			~ label 
-			// 				&:after
-			// 					border-radius: unset
-			// 					content: ''
-			// 					top: 5px
-			// 					left: 6px
-			// 					width: 5px
-			// 					height: 10px
-			// 					border: solid #827d78
-			// 					border-width: 0 2px 2px 0
-			// 					transform: rotate(45deg)
+			.list-checkbox
+				label
+					&::before
+						border-radius: unset
+				input
+					&:checked
+						~ label 
+							&:after
+								border-radius: unset
+								content: ''
+								top: 5px
+								left: 6px
+								width: 5px
+								height: 10px
+								border: solid #827d78
+								border-width: 0 2px 2px 0
+								transform: rotate(45deg)
 		#ctl00_mainContent_ctl07_ctl23245b3b0d6e496d9ab94db2b9d9e09b_rdo23245b3b0d6e496d9ab94db2b9d9e09b
 			li
 				&:last-child
@@ -165,6 +125,22 @@
 					label
 						&::before
 							border-radius: unset
+					input
+						&:checked
+							~ label
+								&::after
+									display: block
+									position: absolute
+									top: 5px
+									left: 6px
+									border: solid #827d78
+									border-radius: unset
+									width: 5px
+									height: 10px
+									content: ""
+									transform: rotate(45deg)
+									border-width: 0 2px 2px 0
+
 			#ctl00_mainContent_ctl07_ctl41a70044a128430faa4b76a4ed6811a3_val41a70044a128430faa4b76a4ed6811a3
 				position: absolute
 				bottom: 0

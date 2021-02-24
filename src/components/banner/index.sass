@@ -89,6 +89,12 @@
 			justify-content: center
 			cursor: pointer
 			padding-top: 50px
+		.arrow-banner
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			cursor: pointer
 			span
 				display: block
 				animation: arrowAni 2s infinite
@@ -96,25 +102,22 @@
 				color: #ffffff
 				font-size: 30px
 				font-weight: 400
-				// text-shadow: 0 2px 0 #ffffff
-	// .home-banner-pagination
-	// 	position: absolute
-	// 	bottom: 30px
-	// 	@media screen and ( max-width: 1024px)
-	// 		bottom: 20px
-			
-	// .swiper-pagination
-	// 	.swiper-pagination-bullet
-	// 		width: 15px
-	// 		height: 5px
-	// 		background: #ffffff
-	// 		border-radius: 2px
-	// 		opacity: .8
-	// 		&:not(:last-child)
-	// 			margin-right: 5px
-	// 		&:focus
-	// 			outline: none
-	// 		&.swiper-pagination-bullet-active
-	// 			transition: .3s all ease-in-out
-	// 			width: 50px
-	// 			background: #00415f
+				display: block
+				animation: arrowAni 2s infinite
+				@media screen and ( max-width: 575px )
+					font-size: 17px
+					height: 9px
+				@media screen and ( max-width: 400px )
+					font-size: 17px
+					height: 10px
+				&:nth-child(2)
+					animation-delay: 0.2s
+				&:nth-child(3)
+					animation-delay: 0.4s
+		@keyframes arrowAni
+			0%
+				opacity: 0
+			50%
+				opacity: 1
+			100%
+				opacity: 0
