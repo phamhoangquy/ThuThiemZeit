@@ -14,6 +14,8 @@ Facebook: https://fb.com/canhcam.vn
         <title></title>
         <portal:MetaContent ID="MetaContent" runat="server" />
         <!-- ////////////// Favicon ////////////// -->
+        <link rel="shortcut icon" href="/Data/Sites/1/skins/default/img/logo.ico">
+        <link rel="icon" href="/logo.ico">
         <link rel="apple-touch-icon" sizes="57x57" href="/Data/Sites/1/skins/default/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/Data/Sites/1/skins/default/favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/Data/Sites/1/skins/default/favicon/apple-icon-72x72.png">
