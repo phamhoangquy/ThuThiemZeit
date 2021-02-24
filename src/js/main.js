@@ -3,9 +3,9 @@ $(document).ready(function() {
     swiperInit();
     toggleSearch();
     mappingMenu();
-    homeS4();
+    // homeS4();
     linksMenu();
-    scrollToDiv();
+    // scrollToDiv();
     setBackgroundElement();
 });
 
@@ -43,16 +43,16 @@ let search = {
 function linksMenu() {
     $(".nav-menu li a").on("click", function(event) {
         if (this.hash !== "") {
-            let offset =
+            let offset123 =
                 $("header").outerHeight();
             var hash = this.hash;
+            console.log($(hash).offset().top)
+            console.log(hash)
             $("html, body").animate({
-                    scrollTop: $(hash).offset().top - offset,
+                    scrollTop: $(hash).offset().top - offset123,
                 },
-                800,
-                function() {
-                    window.location.hash = hash;
-                }
+                800
+
             );
         } // End if
     });
@@ -164,8 +164,8 @@ function homeS4() {
     });
 }
 
-$(document).on("scroll", function() {
-    header.headerScroll();
-    language.languageScroll();
-    search.searchScroll();
-});
+// $(document).on("scroll", function() {
+//     header.headerScroll();
+//     language.languageScroll();
+//     search.searchScroll();
+// });
