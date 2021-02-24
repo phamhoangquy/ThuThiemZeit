@@ -3,9 +3,9 @@ $(document).ready(function() {
     swiperInit();
     toggleSearch();
     mappingMenu();
-    // homeS4();
+    homeS4();
     linksMenu();
-    // scrollToDiv();
+    scrollToDiv();
     setBackgroundElement();
 });
 
@@ -164,8 +164,8 @@ function homeS4() {
     });
 }
 
-// $(document).on("scroll", function() {
-//     header.headerScroll();
-//     language.languageScroll();
-//     search.searchScroll();
-// });
+$(document).on("scroll", function() {
+    header.headerScroll();
+    language.languageScroll();
+    search.searchScroll();
+});
