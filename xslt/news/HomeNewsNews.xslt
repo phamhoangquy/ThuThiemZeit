@@ -22,7 +22,7 @@
 					<div class="col-lg-12">
 						<div class="all-view-more">
 							<a>
-								<xsl:attribute name="href">
+								<!-- <xsl:attribute name="href">
 									<xsl:value-of select="Url"></xsl:value-of>
 								</xsl:attribute>
 								<xsl:attribute name="title">
@@ -30,8 +30,8 @@
 								</xsl:attribute>
 								<xsl:attribute name="target">
 									<xsl:value-of select="Target"></xsl:value-of>
-								</xsl:attribute>
-								xem thêm
+								</xsl:attribute> -->
+								<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 							</a>
 						</div>
 					</div>
@@ -41,7 +41,7 @@
 	</xsl:template>
 	<xsl:template match="News" mode="News1">
 		<a>
-			<xsl:attribute name="href">
+			<!-- <xsl:attribute name="href">
 				<xsl:value-of select="Url"></xsl:value-of>
 			</xsl:attribute>
 			<xsl:attribute name="title">
@@ -49,7 +49,7 @@
 			</xsl:attribute>
 			<xsl:attribute name="target">
 				<xsl:value-of select="Target"></xsl:value-of>
-			</xsl:attribute>
+			</xsl:attribute> -->
 			<div class="news-big-img">
 				<div class="img zoom-in">
 					<img>
@@ -69,7 +69,7 @@
 			</div>
 			<div class="card-title-news">
 				<a>
-					<xsl:attribute name="href">
+					<!-- <xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
 					<xsl:attribute name="title">
@@ -77,7 +77,7 @@
 					</xsl:attribute>
 					<xsl:attribute name="target">
 						<xsl:value-of select="Target"></xsl:value-of>
-					</xsl:attribute>
+					</xsl:attribute> -->
 					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 				</a>
 				<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
@@ -87,7 +87,7 @@
 			</div>
 			<div class="view-more">
 				<a>
-					<xsl:attribute name="href">
+					<!-- <xsl:attribute name="href">
 						<xsl:value-of select="Url"></xsl:value-of>
 					</xsl:attribute>
 					<xsl:attribute name="title">
@@ -95,8 +95,8 @@
 					</xsl:attribute>
 					<xsl:attribute name="target">
 						<xsl:value-of select="Target"></xsl:value-of>
-					</xsl:attribute>
-					Xem thêm 
+					</xsl:attribute> -->
+					<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 				</a>
 				<span></span>
 			</div>
@@ -125,7 +125,7 @@
 					</div>
 					<div class="title-small-news">
 						<a>
-							<xsl:attribute name="href">
+							<!-- <xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>
 							<xsl:attribute name="title">
@@ -133,7 +133,7 @@
 							</xsl:attribute>
 							<xsl:attribute name="target">
 								<xsl:value-of select="Target"></xsl:value-of>
-							</xsl:attribute>
+							</xsl:attribute> -->
 							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 						</a>
 						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
@@ -143,7 +143,7 @@
 					</div>
 					<div class="view-more">
 						<a>
-							<xsl:attribute name="href">
+							<!-- <xsl:attribute name="href">
 								<xsl:value-of select="Url"></xsl:value-of>
 							</xsl:attribute>
 							<xsl:attribute name="title">
@@ -151,8 +151,8 @@
 							</xsl:attribute>
 							<xsl:attribute name="target">
 								<xsl:value-of select="Target"></xsl:value-of>
-							</xsl:attribute>
-							Xem thêm 
+							</xsl:attribute> -->
+							<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 						</a>
 						<span></span>
 					</div>

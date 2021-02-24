@@ -22,7 +22,7 @@
 							</div>
 							<div class="btn-view">
 								<a href="javascript:;" data-fancybox="" data-src="#content-modal">
-									Xem thêm
+									<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 								</a>
 							</div>
 						</div>
