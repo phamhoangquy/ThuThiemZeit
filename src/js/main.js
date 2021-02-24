@@ -1,33 +1,18 @@
 $(document).ready(function() {
-    setBackgroundElement();
     toggleMenuMobile();
     swiperInit();
     toggleSearch();
     mappingMenu();
-    scrollToDiv();
     homeS4();
-    scrollMenu();
-    var path = window.location.href;
-    let Ketqua = path.substr(path.indexOf("#") + 1);
-    console.log(Ketqua);
-    if (path.indexOf("#") != -1) {
-        $("html,body").animate({
-                scrollTop: $("#" + Ketqua).offset().top -
-                    $("header").outerHeight() -
-                    47,
-            },
-            800
-        );
-    }
+    linkAbout();
+    scrollToDiv();
+    setBackgroundElement();
 });
 
 // const InsertBd = () => {
 //     $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
 // };
 
-// const HotLine = () => {
-//     $(".header-infor .hotline_box").appendTo(".appendhotline");
-// };
 let header = {
     headerScroll: () => {
         let heightHeader = $("header").height();
@@ -55,20 +40,21 @@ let search = {
     },
 };
 
-function scrollMenu() {
-    $(".nav-menu li a").on("click", function(e) {
-        if ("" !== this.hash) {
-            var i = $("header").outerHeight() + 90,
-                t = this.hash;
-            $(this)
-                .parent()
-                .addClass("active")
-                .siblings()
-                .removeClass("active"),
-                $("html, body").animate({ scrollTop: $(t).offset().top - i },
-                    800
-                );
-        }
+function linkAbout() {
+    $(".nav-menu li a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset =
+                $("header").outerHeight();
+            var hash = this.hash;
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
     });
 }
 

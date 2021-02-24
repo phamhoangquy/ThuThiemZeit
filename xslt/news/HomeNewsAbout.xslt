@@ -6,7 +6,7 @@
 		
 	</xsl:template>
 	<xsl:template match="News">
-		<section class="home_s-1">
+		<section class="home_s-1" id="menu-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
