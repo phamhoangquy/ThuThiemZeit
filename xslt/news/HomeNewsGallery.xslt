@@ -5,7 +5,7 @@
 		<xsl:apply-templates select="Zone/News"></xsl:apply-templates>
 	</xsl:template>
 	<xsl:template match="News">
-		<section class="home_s-4">
+		<section class="home_s-4" id="menu-4">
 			<div class="head-title">
 				<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h2>
 			</div>

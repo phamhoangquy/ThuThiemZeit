@@ -5,7 +5,7 @@
 		<xsl:apply-templates select="Zone"></xsl:apply-templates>
 	</xsl:template>
 	<xsl:template match="Zone">
-		<section class="home_s-5">
+		<section class="home_s-5" id="menu-5">
 			<div class="container">
 				<div class="head-title">
 					<h2><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>
@@ -31,7 +31,7 @@
 								<xsl:attribute name="target">
 									<xsl:value-of select="Target"></xsl:value-of>
 								</xsl:attribute>
-								xem thêm
+								<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 							</a>
 						</div>
 					</div>
@@ -96,7 +96,7 @@
 					<xsl:attribute name="target">
 						<xsl:value-of select="Target"></xsl:value-of>
 					</xsl:attribute>
-					Xem thêm 
+					<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 				</a>
 				<span></span>
 			</div>
@@ -152,7 +152,7 @@
 							<xsl:attribute name="target">
 								<xsl:value-of select="Target"></xsl:value-of>
 							</xsl:attribute>
-							Xem thêm 
+							<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 						</a>
 						<span></span>
 					</div>

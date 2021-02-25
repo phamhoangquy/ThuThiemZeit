@@ -5,7 +5,7 @@
 		<xsl:apply-templates select="Zone/News"></xsl:apply-templates>
 	</xsl:template>
 	<xsl:template match="News">
-		<section class="home_s-2">
+		<section class="home_s-2" id="menu-2">
 			<div class="container-fuild">
 				<div class="row">
 					<div class="col-lg-6">

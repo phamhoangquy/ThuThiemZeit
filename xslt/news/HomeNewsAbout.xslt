@@ -6,7 +6,7 @@
 		
 	</xsl:template>
 	<xsl:template match="News">
-		<section class="home_s-1">
+		<section class="home_s-1" id="menu-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
@@ -22,7 +22,7 @@
 							</div>
 							<div class="btn-view">
 								<a href="javascript:;" data-fancybox="" data-src="#content-modal">
-									Xem thêm
+									<xsl:value-of select="/ZoneList/ReadMoreText" disable-output-escaping="yes"></xsl:value-of>
 								</a>
 							</div>
 						</div>
