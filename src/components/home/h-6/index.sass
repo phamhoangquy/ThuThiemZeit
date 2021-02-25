@@ -26,6 +26,7 @@
 				flex-wrap: wrap
 				@media screen and ( max-width: 1023px)
 					margin-left: 0
+					padding-left: 5px
 				.list-radio,.list-checkbox
 					flex: 0 0 50%
 					max-width: 50%
@@ -64,6 +65,8 @@
 						color: #c2c3c8
 						position: relative
 						cursor: pointer
+						@media screen and ( max-width: 576px)
+							font-size: 10px
 						&::before
 							content: ''
 							-webkit-appearance: none

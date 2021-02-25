@@ -9,6 +9,14 @@ $(document).ready(function() {
     setBackgroundElement();
 });
 
+window.onload = function() {
+    $(".mask, .modal-ads").addClass('active');
+};
+$('.mask, .close').click(function() {
+    $(this).toggleClass("click");
+    $('.mask').toggleClass("active");
+    $('.modal-ads').toggleClass("active");
+});
 // const InsertBd = () => {
 //     $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
 // };

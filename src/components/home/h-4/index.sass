@@ -20,6 +20,8 @@
 				height: 600px
 				@media screen and (min-width: 768px)
 					width: 600px
+				@media screen and ( max-width: 576px)
+					width: auto
 				&-active
 					@media screen and (min-width: 768px)
 						// width: auto !important
@@ -147,6 +149,7 @@
 			@media screen and ( max-width: 1440px)
 				flex: 0 0 93.33%
 				max-width: 93.33%
+	
 			.swiper-slide
 				// width: auto!important
 				flex: 0 0 16.585%
@@ -154,6 +157,10 @@
 				overflow: hidden
 				&-active
 					flex: 0 0 66.83%
+				@media screen and ( max-width: 576px)
+					flex: 0 0 100%
+					&-active
+						flex: 0 0 100%
 		.button-next
 			position: absolute
 			top: 50%
