@@ -119,13 +119,22 @@
 	.form-modal
 		padding: 50px
 		border: 3px solid #999999
+		@media screen and ( max-width: 1440px)
+			padding: 25px 50px
 		@media screen and ( max-width: 1024px)
-			padding: 15px
+			padding: 30px
 			margin-left: 15px
 			margin-right: 15px
 	.wrap-form
 		@media screen and ( max-width: 1024px)
 			margin-top: 0
+		.form-group
+			&.qtext
+				margin-bottom: 0 !important
+			&.qparagraph
+				margin-bottom: 0 !important
+			span
+				display: none
 	.text-form-modal
 		font-size: 36px
 		color: #ffffff
@@ -137,6 +146,7 @@
 		@media screen and ( max-width: 1440px)
 			padding-left: 80px
 			padding-right: 80px
+			font-size: 28px
 		@media screen and ( max-width: 1024px)
 			padding-right: 0
 			padding-left: 0
@@ -165,3 +175,5 @@
 	color: #fff
 	cursor: pointer
 	border: 0
+	padding-top: 5px
+	text-align: center
