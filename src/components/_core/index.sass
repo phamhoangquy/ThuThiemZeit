@@ -89,11 +89,11 @@
 	height: 100%
 	background-color: rgba(0,0,0,0.5)
 	z-index: 5
-	visibility: hidden
-	opacity: 0
+	visibility: visible
+	opacity: 1
 	&.active
-		visibility: visible
-		opacity: 1
+		visibility: hidden
+		opacity: 0
 .modal-ads
 	position: fixed
 	top: 50%
@@ -101,13 +101,13 @@
 	margin-left: auto
 	margin-top: auto
 	z-index: 10
-	visibility: hidden
-	opacity: 0
+	visibility: visible
+	opacity: 1
 	transform: translate(-50%,-50%)
 	margin-top: 50px
 	&.active
-		visibility: visible
-		opacity: 1
+		visibility: hidden
+		opacity: 0
 	@media screen and ( max-width: 1024px )
 		width: 100%
 		margin-left: 15px
