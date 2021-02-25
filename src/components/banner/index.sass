@@ -1,27 +1,28 @@
 .home-banner
 	position: relative
-	content-visibility: auto
-	contain-intrinsic-size: 1440px
-	// .swiper-slide
-	// 	position: relative
-	// 	&:before
-	// 		z-index: 1
-	// 		pointer-events: none
-	// 		content: ''
-	// 		display: block
-	// 		position: absolute
-	// 		left: 0
-	// 		bottom: 0
-	// 		width: 100%
-	// 		height: 50%
-	// 		background: linear-gradient(180deg,rgba(#000000,0), rgba(#000000,0.3) )
+	.swiper-slide
+		position: relative
+		&:before
+			z-index: 1
+			pointer-events: none
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: -400px
+			width: 100%
+			height: 200%
+			background-image: linear-gradient(180deg,#fff 18%,hsla(0,0%,100%,.1) 50%,hsla(0,0%,100%,.15) 85%)
 	.wrapper
+		background-attachment: fixed
+		// background-repeat: no-repeat
+		background-size: cover
 		height: 1080px
 		position: relative
 		@media screen and(max-width:1441px)
-			height: auto
+			height: 1080px
 		@media screen and(max-width:768px)
-			height: auto
+			height: 550px
 		@media screen and(max-width:576px)
 			height: 450px
 	.wrapper
@@ -34,10 +35,10 @@
 				object-fit: cover
 		@media screen and(max-width:1441px)
 			a
-				height: auto
+				height: 1080px
 		@media screen and(max-width:768px)
 			a
-				height: auto
+				height: 550px
 		@media screen and(max-width:576px)
 			a
 				height: 450px
@@ -89,6 +90,12 @@
 			justify-content: center
 			cursor: pointer
 			padding-top: 50px
+		.arrow-banner
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			cursor: pointer
 			span
 				display: block
 				animation: arrowAni 2s infinite
@@ -96,25 +103,22 @@
 				color: #ffffff
 				font-size: 30px
 				font-weight: 400
-				// text-shadow: 0 2px 0 #ffffff
-	// .home-banner-pagination
-	// 	position: absolute
-	// 	bottom: 30px
-	// 	@media screen and ( max-width: 1024px)
-	// 		bottom: 20px
-			
-	// .swiper-pagination
-	// 	.swiper-pagination-bullet
-	// 		width: 15px
-	// 		height: 5px
-	// 		background: #ffffff
-	// 		border-radius: 2px
-	// 		opacity: .8
-	// 		&:not(:last-child)
-	// 			margin-right: 5px
-	// 		&:focus
-	// 			outline: none
-	// 		&.swiper-pagination-bullet-active
-	// 			transition: .3s all ease-in-out
-	// 			width: 50px
-	// 			background: #00415f
+				display: block
+				animation: arrowAni 2s infinite
+				@media screen and ( max-width: 575px )
+					font-size: 17px
+					height: 9px
+				@media screen and ( max-width: 400px )
+					font-size: 17px
+					height: 10px
+				&:nth-child(2)
+					animation-delay: 0.2s
+				&:nth-child(3)
+					animation-delay: 0.4s
+		@keyframes arrowAni
+			0%
+				opacity: 0
+			50%
+				opacity: 1
+			100%
+				opacity: 0

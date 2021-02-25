@@ -16,25 +16,11 @@
 	<xsl:template match="Banner">
 		<div class="swiper-slide">
 			<div class="wrapper">
-				<a>
-					<!-- <xsl:attribute name="href">
-						<xsl:value-of select="Url"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="title">
-						<xsl:value-of select="Title"></xsl:value-of>
-					</xsl:attribute>
-					<xsl:attribute name="target">
-						<xsl:value-of select="Target"></xsl:value-of>
-					</xsl:attribute> -->
-					<img>
-						<xsl:attribute name="src">
-							<xsl:value-of select="ImageUrl"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:attribute name="alt">
-							<xsl:value-of select="Title"></xsl:value-of>
-						</xsl:attribute>
-					</img>
-				</a>
+				<xsl:attribute name="style">
+					<xsl:text disable-output-escaping="yes">background-image:url("</xsl:text>
+					<xsl:value-of disable-output-escaping="yes" select="ImageUrl"></xsl:value-of>
+					<xsl:text disable-output-escaping="yes">")</xsl:text>
+				</xsl:attribute>
 			</div>
 			<div class="caption">
 				<h2 class="title-caption"><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h2>

@@ -12,7 +12,7 @@
 	h2
 		font-size: 44px
 		color: #ffffff
-		font-weight: 500
+		font-weight: 300
 		text-transform: uppercase
 
 .home-page
@@ -65,7 +65,10 @@
 				font-size: 16px
 				color: #ffffff
 				padding-bottom: 25px
-
+		p
+			font-size: 16px
+			color: #ffffff
+			padding-bottom: 25px
 
 .zoom-in
 	overflow: hidden
@@ -76,3 +79,89 @@
 	img
 		transform: scale(1)
 		transition: .3s all ease-in-out
+
+
+.mask
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.5)
+	z-index: 5
+	visibility: hidden
+	opacity: 0
+	&.active
+		visibility: visible
+		opacity: 1
+.modal-ads
+	position: fixed
+	top: 50%
+	left: 50%
+	margin-left: auto
+	margin-top: auto
+	z-index: 10
+	visibility: hidden
+	opacity: 0
+	transform: translate(-50%,-50%)
+	margin-top: 50px
+	&.active
+		visibility: visible
+		opacity: 1
+	@media screen and ( max-width: 1024px )
+		width: 100%
+		margin-left: 15px
+		margin-right: 15px
+	@media screen and ( max-width: 1023px)
+		margin-left: 0
+		margin-right: 0
+
+	.form-modal
+		padding: 50px
+		border: 3px solid #999999
+		@media screen and ( max-width: 1024px)
+			padding: 15px
+			margin-left: 15px
+			margin-right: 15px
+	.wrap-form
+		@media screen and ( max-width: 1024px)
+			margin-top: 0
+	.text-form-modal
+		font-size: 36px
+		color: #ffffff
+		text-align: center
+		padding-bottom: 30px
+		padding-left: 150px
+		padding-right: 150px
+		text-transform: uppercase
+		@media screen and ( max-width: 1440px)
+			padding-left: 80px
+			padding-right: 80px
+		@media screen and ( max-width: 1024px)
+			padding-right: 0
+			padding-left: 0
+			font-size: 28px
+			padding-bottom: 15px
+	.form-group
+		padding-right: 0
+	.frm-btnwrap
+		display: block !important
+		margin-left: auto !important
+		margin-right: auto !important
+		width: 100px !important
+		@media screen and ( max-width: 1024px)
+			margin-top: 0 !important
+		.frm-btn
+			input
+				border: 1px solid #ffffff
+				background: none
+.close
+	position: absolute
+	top: 0
+	right: 0
+	width: 35px
+	height: 35px
+	background: #999999
+	color: #fff
+	cursor: pointer
+	border: 0

@@ -15,7 +15,8 @@
 			</xsl:if>
 			<a class="nav-link">
 				<xsl:attribute name="href">
-					<xsl:value-of select="Url"></xsl:value-of>
+					<xsl:text>#menu-</xsl:text>
+					<xsl:value-of select="position()" />
 				</xsl:attribute>
 				<xsl:attribute name="title">
 					<xsl:value-of select="Title"></xsl:value-of>
