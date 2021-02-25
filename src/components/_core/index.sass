@@ -135,6 +135,9 @@
 				margin-bottom: 0 !important
 			span
 				display: none
+			input[type='text'], textarea
+				&::placeholder
+					color: #ffffff
 	.text-form-modal
 		font-size: 36px
 		color: #ffffff
@@ -179,3 +182,53 @@
 	text-align: center
 	@media screen and ( max-width: 1023px)
 		right: 15px
+
+
+// page sitemap
+.sitemappage
+	.sitemap
+		padding-top: 140px
+		padding-bottom: 60px
+		padding-left: 15px
+		padding-right: 15px
+		margin: 0 44.5px
+		@media screen and ( max-width: 1280px)
+			margin: 0
+			padding-top: 120px
+		@media screen and ( max-width: 1023px)
+			padding-top: 60px
+		.sitemap-heading
+			h1
+				color: #0082a1
+		.AspNet-TreeView
+			#ctl00_mainContent_menu_UL
+				list-style: none
+				padding: 1px
+				.AspNet-TreeView-Root
+					padding-bottom: 10px
+					margin-left: 10px
+					a
+						margin-left: -10px
+						font-weight: 600
+						color: #606060
+						&:hover
+							color: #0082a1
+							color: #0082a1
+							border-bottom: 1px solid #0082a1
+					&.AspNet-TreeView-Leaf
+						padding-bottom: 10px
+						a
+							font-weight: 600
+							margin-left: -10px
+							color: #606060
+							&:hover
+								color: #0082a1
+								border-bottom: 1px solid #0082a1
+					ul
+						list-style: none
+						padding: 0
+						margin-top: 5px
+						li
+							a
+								font-weight: 300
+								color: #333333
