@@ -9,11 +9,11 @@ $(document).ready(function() {
     setBackgroundElement();
 });
 
-window.onload = function() {
-    $(".mask, .modal-ads").addClass('active');
-};
-$('.mask, .close').click(function() {
-    $(this).toggleClass("click");
+// window.onload = function() {
+//     $(".mask, .modal-ads").addClass('active');
+// };
+$('.mask, modal-ads .close').click(function() {
+    // $(this).toggleClass("click");
     $('.mask').toggleClass("active");
     $('.modal-ads').toggleClass("active");
 });
