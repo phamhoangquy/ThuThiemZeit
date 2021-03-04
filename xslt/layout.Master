@@ -186,7 +186,7 @@ Facebook: https://fb.com/canhcam.vn
                 </main>
                 <!-- ////////////// End Main ////////////// -->
                 <!-- ////////////// Footer ////////////// -->
-                <footer id="menu-7">
+                <footer id="menu-6">
                     <div class="footer-block">
                         <div class="container">
                             <div class="row">
@@ -375,13 +375,14 @@ Facebook: https://fb.com/canhcam.vn
             function ShowToolbar() {
                 $(".cmsadminpanel").removeClass("toggled"), $(".fa-chevron-circle-right").removeClass("fa-rotate-180")
             }
-			function HideForm() {
-				$(".modal-ads").addClass("active"), $('.mask').addClass("active");
-			}
 
-			function ShowForm() {
-				$(".modal-ads").removeClass("active"), $('.mask').removeClass("active")
-			}
+            function HideForm() {
+                $(".modal-ads").addClass("active"), $('.mask').addClass("active");
+            }
+
+            function ShowForm() {
+                $(".modal-ads").removeClass("active"), $('.mask').removeClass("active")
+            }
 
             $(document).ready(function() {
                 $("#pullmenucms").click(function(o) {
@@ -392,14 +393,14 @@ Facebook: https://fb.com/canhcam.vn
                 var o = Get_Cookie("toolbarOpenState");
                 null != o && ("closed" == o && HideToolbar(), "open" == o && ShowToolbar())
 
-				$(".modal-ads .close").click(function(formHide) {
-					formHide.preventDefault(), 
-					$(this).parents(".modal-ads").hasClass("active") ? 
-					(ShowForm(), Set_Cookie("modalFormPopup", "open")) : 
-					(HideForm(), Set_Cookie("modalFormPopup", "closed"))
-				});
-				var formHide = Get_Cookie("modalFormPopup");
-				null != formHide && ("closed" == formHide && HideForm(), "open" == formHide && ShowForm())
+                $(".modal-ads .close").click(function(formHide) {
+                    formHide.preventDefault(),
+                        $(this).parents(".modal-ads").hasClass("active") ?
+                        (ShowForm(), Set_Cookie("modalFormPopup", "open")) :
+                        (HideForm(), Set_Cookie("modalFormPopup", "closed"))
+                });
+                var formHide = Get_Cookie("modalFormPopup");
+                null != formHide && ("closed" == formHide && HideForm(), "open" == formHide && ShowForm())
             });
         </script>
     </body>
