@@ -1,267 +1,269 @@
-.home_s-5
-	background-image: url("../img/vector-news.png")
-	background-size: contain
-	background-repeat: no-repeat
-	background: #0082a1
-	padding: 70px 0
-	.head-title
-		margin-bottom: 25px
-		h2
-			text-align: center
-	.news-big-img
-		position: relative
-		.img
-			max-width: 100%
-			width: 100%
-			max-height: 100%
-			height: 595px
-			img
-				width: 100%
-				height: 100%
-				object-fit: cover
-			@media screen and ( max-width: 767px )
-				max-height: 100%
-				height: 345px
-				max-width: 100%
-				width: 100%
-				img
-					height: 100%
-					width: 100%
-			@media screen and ( max-width: 576px )
-				max-height: 100%
-				height: 345px
-				max-width: 100%
-				width: 100%
-				img
-					height: 100%
-					width: 100%
-	.content-news-list
-		background: #ffffff
-		position: absolute
-		bottom: 25px
-		left: auto
-		width: 300px
-		padding: 24px
-		height: 285px
-		@media screen and ( max-width: 767px )
-			position: initial
-			width: 100%
-			height: auto
-			margin-bottom: 30px
-		@media screen and ( max-width: 576px )
-			position: initial
-			width: 100%
-			height: auto
-			margin-bottom: 30px
-		.date
-			padding-bottom: 15px
-			time
-				font-size: 14px
-				color: #666666
-		.card-title-news
-			a
-				color: #333333
-				font-size: 18px
-				font-weight: 700
-				-webkit-box-orient: vertical
-				-webkit-line-clamp: 3
-				-o-text-overflow: ellipsis
-				display: -webkit-box
-				overflow: hidden
-				text-overflow: ellipsis
-				&:hover
-					color: #0082a1
-		.title-zone
-			margin-bottom: 10px
-			margin-top: 10px
-			color: #333333
-			font-size: 16px
-			font-weight: 500
-			-webkit-box-orient: vertical
-			-webkit-line-clamp: 3
-			display: -webkit-box
-			overflow: hidden
-			text-overflow: ellipsis
-		.view-more
-			a
-				font-size: 14px
-				color: #0082a1
-				text-transform: uppercase
-				font-weight: 700
-				transform: scale(1)
-				transition: .3s all ease-in-out
+// .home_s-5
+// 	background-image: url("../img/vector-news.png")
+// 	background-size: contain
+// 	background-repeat: no-repeat
+// 	background: #0082a1
+// 	padding: 70px 0
+// 	.head-title
+// 		margin-bottom: 25px
+// 		h2
+// 			text-align: center
+// 	.news-big-img
+// 		position: relative
+// 		.img
+// 			max-width: 100%
+// 			width: 100%
+// 			max-height: 100%
+// 			height: 595px
+// 			img
+// 				width: 100%
+// 				height: 100%
+// 				object-fit: cover
+// 			@media screen and ( max-width: 767px )
+// 				max-height: 100%
+// 				height: 345px
+// 				max-width: 100%
+// 				width: 100%
+// 				img
+// 					height: 100%
+// 					width: 100%
+// 			@media screen and ( max-width: 576px )
+// 				max-height: 100%
+// 				height: 345px
+// 				max-width: 100%
+// 				width: 100%
+// 				img
+// 					height: 100%
+// 					width: 100%
+// 	.content-news-list
+// 		background: #ffffff
+// 		position: absolute
+// 		bottom: 25px
+// 		left: auto
+// 		width: 300px
+// 		padding: 24px
+// 		height: 285px
+// 		@media screen and ( max-width: 767px )
+// 			position: initial
+// 			width: 100%
+// 			height: auto
+// 			margin-bottom: 30px
+// 		@media screen and ( max-width: 576px )
+// 			position: initial
+// 			width: 100%
+// 			height: auto
+// 			margin-bottom: 30px
+// 		.date
+// 			padding-bottom: 15px
+// 			time
+// 				font-size: 14px
+// 				color: #666666
+// 		.card-title-news
+// 			a
+// 				color: #333333
+// 				font-size: 18px
+// 				font-weight: 700
+// 				-webkit-box-orient: vertical
+// 				-webkit-line-clamp: 3
+// 				-o-text-overflow: ellipsis
+// 				display: -webkit-box
+// 				overflow: hidden
+// 				text-overflow: ellipsis
+// 				&:hover
+// 					color: #0082a1
+// 		.title-zone
+// 			margin-bottom: 10px
+// 			margin-top: 10px
+// 			color: #333333
+// 			font-size: 16px
+// 			font-weight: 500
+// 			-webkit-box-orient: vertical
+// 			-webkit-line-clamp: 3
+// 			display: -webkit-box
+// 			overflow: hidden
+// 			text-overflow: ellipsis
+// 		.view-more
+// 			a
+// 				font-size: 14px
+// 				color: #0082a1
+// 				text-transform: uppercase
+// 				font-weight: 700
+// 				transform: scale(1)
+// 				transition: .3s all ease-in-out
 				
-			span
-				position: relative
-				&::before
-					content: ''
-					position: absolute
-					width: 20px
-					height: 2px
-					background: #0082a1
-					top: 10px
-					right: -40px
+// 			span
+// 				position: relative
+// 				&::before
+// 					content: ''
+// 					position: absolute
+// 					width: 20px
+// 					height: 2px
+// 					background: #0082a1
+// 					top: 10px
+// 					right: -40px
 			
-	.row.small-news
-		&:nth-child(1)
-			.col-lg-6
-				&:nth-child(2)
-					padding-right: 15px
-					@media screen and ( max-width: 1441px )
-						padding-right: 15px
-					@media screen and ( max-width: 1024.98px )
-						padding-right: 15px
-					@media screen and ( max-width: 767px )
-						padding-right: 15px
-						padding-left: 15px
-		&:nth-child(2n)
-			.col-lg-6
-				&:nth-child(1)
-					padding-right: 15px
-					padding-left: 0
-					order: 2
-					@media screen and ( max-width: 767px )
-						order: inherit
-						padding-left: 15px
-						padding-right: 0
-					@media screen and ( max-width: 576px )
-						order: inherit
-						padding-left: 15px
-				.content-small-news
-					margin-left: 15px
-					@media screen and ( max-width: 767px )
-						padding-left: 15px
-						padding-right: 15px
-						margin-left: 0
-					@media screen and ( max-width: 576px )
-						margin-left: 0
-						padding: 20px
+// 	.row.small-news
+// 		&:nth-child(1)
+// 			.col-lg-6
+// 				&:nth-child(2)
+// 					padding-right: 15px
+// 					@media screen and ( max-width: 1441px )
+// 						padding-right: 15px
+// 					@media screen and ( max-width: 1024.98px )
+// 						padding-right: 15px
+// 					@media screen and ( max-width: 767px )
+// 						padding-right: 15px
+// 						padding-left: 15px
+// 		&:nth-child(2n)
+// 			.col-lg-6
+// 				&:nth-child(1)
+// 					padding-right: 15px
+// 					padding-left: 0
+// 					order: 2
+// 					@media screen and ( max-width: 767px )
+// 						order: inherit
+// 						padding-left: 15px
+// 						padding-right: 0
+// 					@media screen and ( max-width: 576px )
+// 						order: inherit
+// 						padding-left: 15px
+// 				.content-small-news
+// 					margin-left: 15px
+// 					@media screen and ( max-width: 767px )
+// 						padding-left: 15px
+// 						padding-right: 15px
+// 						margin-left: 0
+// 					@media screen and ( max-width: 576px )
+// 						margin-left: 0
+// 						padding: 20px
 						
-	.small-news
-		margin-bottom: 25px
-		.col-lg-6
-			&:nth-child(1)
-				padding-right: 0
-			&:nth-child(2)
-				padding-left: 0
-				padding-right: 0
-				@media screen and ( max-width: 1441px )
-					padding-right: 0
-				@media screen and ( max-width: 1024.98px )
-					padding-right: 0
-				@media screen and ( max-width: 767px )
-					padding-left: 15px
-					padding-right: 15px
-				@media screen and ( max-width: 576px )
-					padding-right: 15px
-					padding-left: 15px
-		.new-img
-			.img
-				max-width: 100%
-				max-height: 100%
-				width: 100%
-				height: 285px
-				img
-					width: 100%
-					height: 100%
-					object-fit: cover
-				@media screen and ( max-width: 767px )
-					max-height: 100%
-					height: 345px
-					max-width: 100%
-					width: 100%
-					img
-						height: 100%
-						width: 100%
-						padding-right: 15px
-				@media screen and ( max-width: 576px )
-					max-height: 100%
-					height: 345px
-					max-width: 100%
-					max-height: 100%
-					img
-						height: 100%
-						width: 100%
-						padding-right: 15px
+// 	.small-news
+// 		margin-bottom: 25px
+// 		.col-lg-6
+// 			&:nth-child(1)
+// 				padding-right: 0
+// 			&:nth-child(2)
+// 				padding-left: 0
+// 				padding-right: 0
+// 				@media screen and ( max-width: 1441px )
+// 					padding-right: 0
+// 				@media screen and ( max-width: 1024.98px )
+// 					padding-right: 0
+// 				@media screen and ( max-width: 767px )
+// 					padding-left: 15px
+// 					padding-right: 15px
+// 				@media screen and ( max-width: 576px )
+// 					padding-right: 15px
+// 					padding-left: 15px
+// 		.new-img
+// 			.img
+// 				max-width: 100%
+// 				max-height: 100%
+// 				width: 100%
+// 				height: 285px
+// 				img
+// 					width: 100%
+// 					height: 100%
+// 					object-fit: cover
+// 				@media screen and ( max-width: 767px )
+// 					max-height: 100%
+// 					height: 345px
+// 					max-width: 100%
+// 					width: 100%
+// 					img
+// 						height: 100%
+// 						width: 100%
+// 						padding-right: 15px
+// 				@media screen and ( max-width: 576px )
+// 					max-height: 100%
+// 					height: 345px
+// 					max-width: 100%
+// 					max-height: 100%
+// 					img
+// 						height: 100%
+// 						width: 100%
+// 						padding-right: 15px
 
-		.content-small-news
-			background: #fcfbf7
-			padding: 24px
-			height: 285px
-			@media screen and ( max-width: 767px )
-				height: auto
-				padding: 20px
-			@media screen and ( max-width: 576px )
-				height: auto
-				padding: 20px
-			.date
-				padding-bottom: 10px
-				time
-					font-size: 14px
-					color: #666666
-			.title-small-news
-				a
-					color: #333333
-					font-size: 18px
-					font-weight: 700
-					-webkit-box-orient: vertical
-					-webkit-line-clamp: 3
-					-o-text-overflow: ellipsis
-					display: -webkit-box
-					overflow: hidden
-					text-overflow: ellipsis
-			.title-zone
-				color: #333333
-				font-size: 16px
-				-webkit-box-orient: vertical
-				-webkit-line-clamp: 4
-				-o-text-overflow: ellipsis
-				display: -webkit-box
-				overflow: hidden
-				text-overflow: ellipsis
-				padding-top: 5px
-				height: 100px
-			.view-more
-				a
-					font-size: 14px
-					color: #0082a1
-					text-transform: uppercase
-					font-weight: 700
+// 		.content-small-news
+// 			background: #fcfbf7
+// 			padding: 24px
+// 			height: 285px
+// 			@media screen and ( max-width: 767px )
+// 				height: auto
+// 				padding: 20px
+// 			@media screen and ( max-width: 576px )
+// 				height: auto
+// 				padding: 20px
+// 			.date
+// 				padding-bottom: 10px
+// 				time
+// 					font-size: 14px
+// 					color: #666666
+// 			.title-small-news
+// 				a
+// 					color: #333333
+// 					font-size: 18px
+// 					font-weight: 700
+// 					-webkit-box-orient: vertical
+// 					-webkit-line-clamp: 3
+// 					-o-text-overflow: ellipsis
+// 					display: -webkit-box
+// 					overflow: hidden
+// 					text-overflow: ellipsis
+// 			.title-zone
+// 				color: #333333
+// 				font-size: 16px
+// 				-webkit-box-orient: vertical
+// 				-webkit-line-clamp: 4
+// 				-o-text-overflow: ellipsis
+// 				display: -webkit-box
+// 				overflow: hidden
+// 				text-overflow: ellipsis
+// 				padding-top: 5px
+// 				height: 100px
+// 			.view-more
+// 				a
+// 					font-size: 14px
+// 					color: #0082a1
+// 					text-transform: uppercase
+// 					font-weight: 700
 					
-				span
-					position: relative
-					&::before
-						content: ''
-						position: absolute
-						width: 20px
-						height: 2px
-						background: #0082a1
-						top: 10px
-						right: -40px
-			&:hover
-				cursor: pointer
-				.title-small-news
-					a
-						color: #0082a1
-	.all-view-more
-		display: flex
-		justify-content: center
-		align-items: center
-		padding-top: 30px
-		a
-			box-shadow: 0px 5px 20px 0px rgba(232, 36, 41, 0.25)
-			background: none
-			border: 1px solid #ffffff
-			color: #ffffff
-			display: flex
-			justify-content: center
-			align-items: center
-			width: 160px
-			height: 45px
-			text-transform: uppercase
-			transform: scale(1)
-			transition: .3s all ease-in-out
-			&:hover
-				transform: scale(1.13)
-				color: #fff
+// 				span
+// 					position: relative
+// 					&::before
+// 						content: ''
+// 						position: absolute
+// 						width: 20px
+// 						height: 2px
+// 						background: #0082a1
+// 						top: 10px
+// 						right: -40px
+// 			&:hover
+// 				cursor: pointer
+// 				.title-small-news
+// 					a
+// 						color: #0082a1
+// 	.all-view-more
+// 		display: flex
+// 		justify-content: center
+// 		align-items: center
+// 		padding-top: 30px
+// 		a
+// 			box-shadow: 0px 5px 20px 0px rgba(232, 36, 41, 0.25)
+// 			background: none
+// 			border: 1px solid #ffffff
+// 			color: #ffffff
+// 			display: flex
+// 			justify-content: center
+// 			align-items: center
+// 			width: 160px
+// 			height: 45px
+// 			text-transform: uppercase
+// 			transform: scale(1)
+// 			transition: .3s all ease-in-out
+// 			&:hover
+// 				transform: scale(1.13)
+// 				color: #fff
 				
+.home_s-5
+	display: none
